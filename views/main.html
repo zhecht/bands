@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="plot"></div>
+<div id="percentiles"></div>
+<input id="word_search"/>
+<ul id="word_list" hidden>
+	{% for word in words.split(",") %}
+	<li>{{word}}</li>
+	{% endfor %}
+</ul>
+<div id="lyrics"></div>
+<script>
+	var traces = [];
+	var albums = [];
+	var ranks = {};
+	var artist = "{{artist}}";
+	var highest = 0;
+
+	function format_sec(sec) {
+		var min = Math.floor(sec / 60);
+		sec = parseInt(sec - (min * 60));
+		if (sec < 10) {
+			sec = "0"+sec;
+		}
+		return min+":"+sec;
+	}
+	function htmlDecode(input){
+		var e = document.createElement('textarea');
+		e.innerHTML = input;
+		// handle case of empty input
+		return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+	}
+</script>
+{% for album in ranks %}
+	<script>
+		ranks["{{album.name}}"] = {{album.ranks}};
+	</script>
+{% endfor %}
+{% for album in graph %}
+	<script>
+		var trace = {
+			y: [],
+			text: [],
+			type: 'box',
+			name: "{{album.name}}",
+			jitter: 0.3,
+			pointpos: -1.8,
+			hoverinfo: 'text',
+			marker: {
+				//color: 'rgb(7,40,89)'
+			},
+			boxpoints: 'all'
+		};
+		albums.push(htmlDecode("{{album.name}}"));
+	</script>
+	{% for song in album.lengths %}
+	<script>
+		if ({{song.seconds}} > highest) {
+			highest = {{song.seconds}};
+		}
+		trace["text"].push(htmlDecode("{{song.name}}")+" - "+format_sec({{song.seconds}}));
+		trace["y"].push({{song.seconds}});
+	</script>
+	{% endfor %}
+	<script>
+		traces.push(trace);
+	</script>
+{% endfor %}
+<script>
+	var layout = {
+		title: 'Box',
+		yaxis: {
+			tickvals:[],
+			ticktext:[]
+		}
+	};
+	for (var i = 0; i < highest; i += 61) {
+		layout["yaxis"]["tickvals"].push(i);
+		layout["yaxis"]["ticktext"].push((i % 60) + ":00");
+	}
+	Plotly.newPlot('plot', traces, layout);
+</script>
+<script>
+	var percentiles = [25, 50, 75];
+	for (var p = 0; p < percentiles.length; ++p) {
+		for (var t = 0; t < traces.length; ++t) {
+			var rank = (percentiles[p] / 100) * traces.length;
+		}
+	}
+	var trace = {
+		x: [],
+		y: [],
+		type: "scatter",
+		mode: 'lines+markers',
+		line: {shape: 'linear'}
+	};
+	var layout = {
+	   // title: "Average Song Lengths",
+		xaxis: {
+			//autotick: false,
+			title: "Album"
+		},
+		yaxis: {
+			title: "Length (sec)"
+		}
+	};
+	//trace['x'] = "{{median_x}}".split(',');
+	//trace['y'] = "{{median_y}}".split(',');
+
+	var all_x_axis = "{{x_axis}}".split('~');
+	var all_y_axis = "{{y_axis}}".split('~');
+	var all_words = "{{words}}".split(',');
+	var all_traces = [];
+
+	for (var i = 0; i < all_x_axis.length; ++i) {
+		var trace = {
+			name: htmlDecode(all_words[i]),
+			x: all_x_axis[i].split(','),
+			y: all_y_axis[i].split(','),
+			type: "scatter",
+			mode: 'lines+markers',
+			line: {shape: 'linear'}
+		};
+		all_traces.push(trace);
+		//console.log(i, all_words[i], calculate_R(all_y_axis[i].split(',')));
+	}
+	Plotly.newPlot("lyrics", all_traces, layout);
+</script>
+{% endblock %}

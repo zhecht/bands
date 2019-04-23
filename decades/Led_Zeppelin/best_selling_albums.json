@@ -1,0 +1,42 @@
+{
+    "Led Zeppelin II": {
+        "date": "10-22-1969", 
+        "link": "/wiki/Led_Zeppelin_II", 
+        "artist": "Led_Zeppelin"
+    }, 
+    "Presence": {
+        "date": "03-31-1976", 
+        "link": "/wiki/Presence_(album)", 
+        "artist": "Led_Zeppelin"
+    }, 
+    "Led Zeppelin": {
+        "date": "01-12-1969", 
+        "link": "/wiki/Led_Zeppelin_(album)", 
+        "artist": "Led_Zeppelin"
+    }, 
+    "Physical Graffiti": {
+        "date": "02-24-1975", 
+        "link": "/wiki/Physical_Graffiti", 
+        "artist": "Led_Zeppelin"
+    }, 
+    "Led Zeppelin III": {
+        "date": "10-05-1970", 
+        "link": "/wiki/Led_Zeppelin_III", 
+        "artist": "Led_Zeppelin"
+    }, 
+    "Houses of the Holy": {
+        "date": "03-28-1973", 
+        "link": "/wiki/Houses_of_the_Holy", 
+        "artist": "Led_Zeppelin"
+    }, 
+    "In Through the Out Door": {
+        "date": "08-15-1979", 
+        "link": "/wiki/In_Through_the_Out_Door", 
+        "artist": "Led_Zeppelin"
+    }, 
+    "Led Zeppelin IV": {
+        "date": "11-08-1971", 
+        "link": "/wiki/Led_Zeppelin_IV", 
+        "artist": "Led_Zeppelin"
+    }
+}

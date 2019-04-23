@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="plot" hidden></div>
+
+<script>
+	var traces = [];
+	var hashes = {};
+	
+</script>
+{% for label in stats %}
+	<script>
+		var trace = {
+			text: "{{label.label}}",
+			x: [],
+			y: [],
+			stackgroup: 'one'
+		};
+	</script>
+	{% for year in label["data"] %}
+		<script>			
+			trace["x"].push({{year}});
+			trace["y"].push(  ({{label["data"][year]}} / {{totals[year]}} * 100).toFixed(2) );
+		</script>
+	{% endfor %}
+	<script>
+		traces.push(trace);
+	</script>
+{% endfor %}
+<script>
+	var plot = document.getElementById("plot");
+	Plotly.newPlot(plot, traces, {title: "Label share by percentage"});
+</script>
+{% endblock %}

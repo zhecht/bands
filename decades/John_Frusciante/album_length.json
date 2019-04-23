@@ -1,0 +1,256 @@
+{
+    "Curtains": {
+        "total_songs": 11,
+        "minutes": 33,
+        "seconds": 37,
+        "length_arr": [
+            233,
+            142,
+            215,
+            186,
+            123,
+            269,
+            213,
+            116,
+            172,
+            192,
+            156
+        ]
+    },
+    "Smile From the Streets You Hold": {
+        "total_songs": 19,
+        "minutes": 65,
+        "seconds": 30,
+        "length_arr": [
+            489,
+            96,
+            99,
+            140,
+            76,
+            528,
+            153,
+            255,
+            154,
+            372,
+            128,
+            177,
+            232,
+            187,
+            309,
+            90,
+            140,
+            249,
+            56
+        ]
+    },
+    "Renoise Tracks 2009-2011": {
+        "total_songs": 8,
+        "minutes": 36,
+        "seconds": 37,
+        "length_arr": [
+            285,
+            339,
+            213,
+            368,
+            264,
+            247,
+            369,
+            112
+        ]
+    },
+    "The Empyrean": {
+        "total_songs": 10,
+        "minutes": 54,
+        "seconds": 2,
+        "length_arr": [
+            549,
+            213,
+            370,
+            203,
+            510,
+            243,
+            254,
+            436,
+            246,
+            218
+        ]
+    },
+    "PBX Funicular Intaglio Zone": {
+        "total_songs": 9,
+        "minutes": 36,
+        "seconds": 58,
+        "length_arr": [
+            160,
+            227,
+            264,
+            386,
+            137,
+            230,
+            295,
+            261,
+            258
+        ]
+    },
+    "From the Sounds Inside": {
+        "total_songs": 21,
+        "minutes": 46,
+        "seconds": 41,
+        "length_arr": [
+            129,
+            205,
+            114,
+            117,
+            183,
+            278,
+            131,
+            141,
+            107,
+            122,
+            130,
+            162,
+            180,
+            116,
+            129,
+            116,
+            92,
+            62,
+            132,
+            64,
+            91
+        ]
+    },
+    "Niandra Lades and Usually Just a T-Shirt": {
+        "total_songs": 27,
+        "minutes": 74,
+        "seconds": 51,
+        "length_arr": [
+            177,
+            228,
+            125,
+            125,
+            150,
+            132,
+            220,
+            101,
+            143,
+            106,
+            197,
+            189,
+            119,
+            221,
+            34,
+            261,
+            110,
+            98,
+            90,
+            89,
+            102,
+            475,
+            424,
+            25,
+            111,
+            327,
+            112
+        ]
+    },
+    "Inside of Emptiness": {
+        "total_songs": 10,
+        "minutes": 39,
+        "seconds": 26,
+        "length_arr": [
+            240,
+            154,
+            187,
+            273,
+            370,
+            214,
+            229,
+            293,
+            147,
+            259
+        ]
+    },
+    "To Record Only Water for Ten Days": {
+        "total_songs": 16,
+        "minutes": 45,
+        "seconds": 42,
+        "length_arr": [
+            259,
+            112,
+            253,
+            119,
+            249,
+            237,
+            130,
+            71,
+            212,
+            161,
+            141,
+            106,
+            133,
+            183,
+            210,
+            166
+        ]
+    },
+    "The Will to Death": {
+        "total_songs": 12,
+        "minutes": 42,
+        "seconds": 23,
+        "length_arr": [
+            259,
+            227,
+            240,
+            320,
+            234,
+            182,
+            272,
+            168,
+            137,
+            143,
+            133,
+            228
+        ]
+    },
+    "Shadows Collide With People": {
+        "total_songs": 18,
+        "minutes": 64,
+        "seconds": 5,
+        "length_arr": [
+            375,
+            273,
+            178,
+            239,
+            102,
+            158,
+            230,
+            211,
+            120,
+            176,
+            196,
+            203,
+            216,
+            246,
+            197,
+            214,
+            109,
+            402
+        ]
+    },
+    "Enclosure": {
+        "total_songs": 9,
+        "minutes": 37,
+        "seconds": 35,
+        "length_arr": [
+            286,
+            263,
+            135,
+            189,
+            290,
+            385,
+            247,
+            227,
+            233
+        ]
+    }
+}

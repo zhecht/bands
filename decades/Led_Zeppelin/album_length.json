@@ -1,0 +1,132 @@
+{
+    "Led Zeppelin II": {
+        "seconds": 34.0, 
+        "minutes": 41.0, 
+        "length_arr": [
+            274, 
+            334, 
+            260, 
+            289, 
+            286, 
+            254, 
+            159, 
+            379, 
+            259
+        ], 
+        "total_songs": 9
+    }, 
+    "Presence": {
+        "seconds": 27.0, 
+        "minutes": 44.0, 
+        "length_arr": [
+            382, 
+            178, 
+            250, 
+            376, 
+            630, 
+            284, 
+            567
+        ], 
+        "total_songs": 7
+    }, 
+    "Led Zeppelin": {
+        "seconds": 49.0, 
+        "minutes": 44.0, 
+        "length_arr": [
+            402, 
+            282, 
+            132, 
+            274, 
+            150, 
+            388, 
+            388, 
+            166, 
+            507
+        ], 
+        "total_songs": 9
+    }, 
+    "Physical Graffiti": {
+        "seconds": 59.0, 
+        "minutes": 87.0, 
+        "length_arr": [
+            335, 
+            126, 
+            314, 
+            524, 
+            391, 
+            664, 
+            517, 
+            253, 
+            336, 
+            231, 
+            241, 
+            216, 
+            246, 
+            283, 
+            338, 
+            264
+        ], 
+        "total_songs": 16
+    }, 
+    "Led Zeppelin III": {
+        "seconds": 8.0, 
+        "minutes": 43.0, 
+        "length_arr": [
+            146, 
+            209, 
+            298, 
+            192, 
+            260, 
+            338, 
+            244, 
+            221, 
+            235, 
+            445
+        ], 
+        "total_songs": 10
+    }, 
+    "Houses of the Holy": {
+        "seconds": 55.0, 
+        "minutes": 40.0, 
+        "length_arr": [
+            459, 
+            290, 
+            223, 
+            263, 
+            197, 
+            420, 
+            332, 
+            271
+        ], 
+        "total_songs": 8
+    }, 
+    "In Through the Out Door": {
+        "seconds": 30.0, 
+        "minutes": 42.0, 
+        "length_arr": [
+            198, 
+            372, 
+            409, 
+            353, 
+            331, 
+            634, 
+            253
+        ], 
+        "total_songs": 7
+    }, 
+    "Led Zeppelin IV": {
+        "seconds": 27.0, 
+        "minutes": 42.0, 
+        "length_arr": [
+            211, 
+            294, 
+            351, 
+            284, 
+            482, 
+            220, 
+            278, 
+            427
+        ], 
+        "total_songs": 8
+    }
+}

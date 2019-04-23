@@ -1,0 +1,320 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+}
+
+body,html {
+  width:100%;
+  height:100%;
+  background-color:#f1f1f1;
+}
+
+@font-face {
+  font-family: TitleFont;
+  src: url("/static/fonts/Courgette-Regular.ttf");
+}
+
+#plot, #percentiles, #lyrics {
+  
+}
+
+#header {
+  width:100%;
+  height:75px;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #232526 , #414345);
+  background: linear-gradient(to left, #232526 , #414345);
+  position: relative;
+}
+#header h1 {
+  line-height: 75px;
+  color:white;
+  font-size: 40px;
+  padding-left:5%;
+  float: left;
+
+}
+#header a {
+  text-decoration: none;
+  color:white;
+  font-family: TitleFont;
+}
+
+#content {
+  width:100%;
+  height:100%;
+  float: left;
+  background: #F1f1f1;
+  padding-top:5%;
+}
+
+#loggedin {
+  position:absolute;
+  right:0%; top:0;
+  height:100%;
+  width:300px;
+  color:white;
+}
+
+#login {
+  position:absolute;
+  right:5%; top:0;
+  height:100%;
+  width:200px;
+}
+
+#login button,nav a,nav input {
+  width: 100%;
+  border: 2px solid #52d273;
+  font-size: 16px;
+  background: rgba(0,0,0,0);
+  color: white;
+  padding: 10px 5px;
+}
+nav a,nav input {
+  
+  border:0;
+  width: 80px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: TitleFont;
+}
+nav a.active,nav input.active {
+  box-shadow: inset 0px 0px 18px 10px rgba(35,37,38,.75);
+  -moz-box-shadow: inset 0px 0px 18px 10px rgba(35,37,38,.75);
+  -webkit-box-shadow: inset 0px 0px 18px 10px rgba(35,37,38,.75);
+  color:white;
+}
+#loggedin p {
+  font-size: 18px;
+  line-height: 45px;
+  text-align: center;
+}
+nav {
+  float: left;
+  background: #F00;
+  width:100%;
+}
+#All {
+  margin-left:5%;
+}
+nav form {
+  float: left;
+}
+nav button,nav input {
+  
+}
+
+#login_form {
+  height:100%;
+}
+
+#login_form input{
+  width:100%;
+  padding:5px;
+  margin-top:5px;
+}
+
+#login_form input[type=submit],#login_form input[type=button] {
+  float: left;
+  width:45%;
+  padding:2px;
+  margin-left:5%;
+  margin-top:7.5px;
+  font-size: 14px;
+  border: 2px solid #52d273;
+  background: rgba(0,0,0,0);
+  color: #52d273;
+}
+#login_form input[type=button] {
+  color: #e94f64;
+  border: 2px solid #e94f64;
+}
+
+.site {
+  margin-top: 5%;
+  width: 30%;
+  height: 350px;
+  margin:0 1.5%;
+  background:white;
+  display:inline-block;
+}
+
+#title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: TitleFont;
+}
+
+#instrument_list {
+  width: 100%;
+}
+
+#instrument_list p {
+  padding: 5px;
+  font-size: 16px;
+}
+
+#subtitle {
+  text-align: center;
+
+}
+
+.arrow {
+  position: absolute;
+  z-index: 11;
+  top: 50%;
+  margin-left:5px;
+  display: inline-block;
+  width: .4em;
+  height: .4em;
+  border-right: .2em solid #B22222;
+  border-top: .2em solid #B22222;
+  
+  transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow_up {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+#album_dropdown {
+  width:225px;
+}
+#album_dropdown a {
+  width: 100%;
+  display:block;
+  background: #232526;
+  color: white;
+  padding: 5px;
+  border-bottom: 1px solid;
+
+}
+#album_dropdown a:hover {
+  color: #F00000;
+  cursor: pointer;
+  border-color:white;
+}
+
+#album_cover {
+  float: left;
+  width:250px;
+  height:250px;
+}
+#album_cover img {
+  width:200px;
+  height:200px;
+  margin-left:25px;
+}
+#album_info {
+  width:calc(100% - 250px);
+  float:left;
+  height:250px;
+  color:white;
+}
+#album_info #title {
+  text-align: left;
+  font-size: 24px;
+}
+#album_songs {
+  width:100%;
+  border-collapse: collapse;
+}
+
+#album_songs tr:nth-child(even) {
+  background: #f1f1f1;
+}
+#album_songs tr:nth-child(odd) {
+  background: white;
+}
+#album_songs tr.header {
+  background: #F00;
+  color: white;
+}
+.song {
+  text-align: center;
+}
+.song td,tr.header th {
+  padding:5px;
+  font-family: TitleFont;
+}
+.song td:nth-child(2),.header th:nth-child(2) {
+  text-align: left;
+  padding-left: 5%;
+}
+.song a {
+  font-family: TitleFont;
+}
+
+#thumbnail_div {
+  margin-top:2.5%;
+}
+
+#thumbnail_div div {
+  width:calc(100% / 5);
+  float: left;
+  padding: 10px 0;
+}
+
+#thumbnail_div div img {
+  margin-left:calc((100% - 140px) / 2);
+  cursor: pointer;
+  width:140px; height:140px;
+}
+#thumbnail_div div a {
+  float: left;
+  text-align: center;
+  width:100%;
+  overflow-x: hidden;
+  font-family: TitleFont;
+}
+
+@media (max-width: 700px) {
+  #thumbnail_div div {
+    width:calc(100% / 3);
+  }
+}
+
+@media (max-width: 400px) {
+  nav a {
+    width:60px;
+  }
+  #thumbnail_div div img {
+    width:100px; height:100px;
+    margin-left:calc((100% - 100px) / 2);
+  }
+  #album_cover, #album_cover img, #album_info {
+    width:125px; height:125px;
+  }
+  #album_cover img {
+    margin:0;
+  }
+  #album_info {
+    width:calc(100% - 125px);
+  }
+  #album_info #title {
+    font-size:18px;
+  }
+}
+
+@media (max-width: 320px) {
+  nav a {
+    width:50px;
+  }
+  #album_info #title {
+    text-align: center;
+  }
+}
